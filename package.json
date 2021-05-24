@@ -9,7 +9,7 @@
     "build:client:dev:watch": "webpack --config config/client/development/config.js --watch",
     "build:client:prod": "webpack --config config/client/production/config.js",
     "start-dev": "run-p build:client:dev:watch run:server:dev",
-    "build": "run-p build:client:prod run:server:prod",
+    "build": "npm run build:client:prod ; npm run run:server:prod",
     "start": "node ./builds/prod.build/server.prod.bundle.js",
     "tests": "jest"
   },
