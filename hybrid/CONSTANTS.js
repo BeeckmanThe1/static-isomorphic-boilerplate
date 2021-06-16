@@ -1,0 +1,3 @@
+export default {
+    REDUX_STORE_KEY: 'SERVER_PROCESSED_REDUX_DATA'
+};
